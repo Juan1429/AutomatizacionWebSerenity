@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Registro exitoso" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-10-04T13:12:45" hostname="DESKTOP-P3OGUBB" time="5.712">
+  <properties/>
+  <testcase name="Registrarme" classname="Registro exitoso" time="5.712">
+    <failure message="java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+	at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:1077)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getRichStringCellValue(XSSFCell.java:395)
+	at org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue(XSSFCell.java:347)
+	at com.advantageonlineshopping.utils.Excel.leerDatoExcel(Excel.java:36)
+	at com.advantageonlineshopping.tasks.Registro.performAs(Registro.java:51)
+	at com.advantageonlineshopping.tasks.Registro$$EnhancerByCGLIB$$75480bc.CGLIB$performAs$0(&lt;generated&gt;)
+	at com.advantageonlineshopping.tasks.Registro$$EnhancerByCGLIB$$75480bc$$FastClassByCGLIB$$1b8a97d1.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:460)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:445)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:420)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:175)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:162)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:68)
+	at com.advantageonlineshopping.tasks.Registro$$EnhancerByCGLIB$$75480bc.performAs(&lt;generated&gt;)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:233)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:214)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:171)
+	at com.advantageonlineshopping.stepDefinitions.RegistroStepDefinitions.voyARegistrarmeEnAdvantageonlineshopping(RegistroStepDefinitions.java:35)
+	at ✽.voy a registrarme en advantageonlineshopping(src/test/resources/features/Registro.feature:5)
+</failure>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 106.0.5249.21 (71f4e2c9a6f38f5550a8ea29a984a08304554956-refs/branch-heads/5249@{#228}) on port 13042
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+oct. 04, 2022 8:12:48 A. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED WITH ERROR: Registrarme
+---------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Juan david registro
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Cannot get a STRING value from a NUMERIC cell
+]]></system-err>
+</testsuite>
